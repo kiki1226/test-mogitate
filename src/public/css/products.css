@@ -1,0 +1,238 @@
+/* --- 共通設定 --- */
+body {
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+    background-color: #f9f9f9;
+    color: #4B4B4B;
+}
+/* --- フォーム --- */
+.search-sort-form {
+    width: 240px;
+}
+/* --- ヘッダー部 --- */
+.page-nav {
+    width: 100%;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button-itiran {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-button-touroku {
+    width: 137px;
+    height: 50px;
+    padding: 13px 20px;
+    background: #FFA929;
+    box-shadow: 0px 4px 10px #0000001A;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* --- 検索 + 並び替えフォーム --- */
+.product-page__form {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+    align-items: flex-start;
+}
+
+/* 左カラム */
+.search-sort-container {
+    width: 240px;
+}
+
+.search-label {
+    margin-bottom: 24px;
+}
+
+.search-input {
+    width: 100%;
+    height: 50px;
+    padding: 14.5px 10px;
+    border-radius: 25px;
+    border: 1px solid #E0DFDE;
+}
+
+.search-input::placeholder {
+    color: #E0DFDE;
+}
+
+.search-button-box {
+    margin-top: 12px;
+}
+
+.search-button {
+    width: 100%;
+    height: 44px;
+    background: #FFD400;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-button__label {
+    font-weight: 600;
+    font-size: 16px;
+    color: #4B4B4B;
+}
+
+/* 並び替え */
+.sort-label {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sort-label__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.sort-select-box {
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+}
+
+.sort-select {
+    width: 100%;
+    height: 43px;
+    padding: 0 10px;
+    border: none;
+    font-size: 14px;
+    color: #4B4B4B;
+    background: #FFFFFF;
+}
+
+/* --- 商品一覧 --- */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1162px;
+}
+
+.product-card {
+    width: 250px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;   
+    border-radius: 10px;
+}
+
+.product-card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.product-card__info h3,
+.product-card__info p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4B4B4B;
+    white-space: nowrap;
+}
+
+/* --- ページネーション --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination li {
+    list-style: none;
+}
+
+.pagination a,
+.pagination span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: white;
+    color: #4B4B4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #E0DFDE;
+}
+
+.pagination .active span {
+    background-color: #FFD400;
+    color: white;
+    border: none;
+}
+
+.pagination a:hover {
+    background-color: #FFA929;
+    color: white;
+}
+
+.sort-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFD600;
+    border-radius: 9999px;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ffffff;
+    margin: 12px 0 20px 0;
+    line-height: 1;
+}
+
+.reset-sort-form {
+    margin: 0;
+    padding: 0;
+}
+
+.sort-reset-button {
+    margin-left: 10px;
+    background-color: #FFD600;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sort-reset-button:hover {
+    background-color: #FFB300;
+}

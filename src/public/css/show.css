@@ -1,0 +1,254 @@
+/* ===== レイアウト全体 ===== */
+.product-edit-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+/* ===== タイトル ===== */
+.titole-container {
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.breadcrumb {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #080808;
+}
+.shouhin {
+
+    color: #0fe1e8;
+    font-weight: bold;
+}
+/* ===== 左エリア（画像 + ファイル） ===== */
+.product-edit-left {
+    text-align: center;
+}
+
+.product-edit-left img {
+    width: 397px;
+    border-radius: 8px;
+}
+
+/* ===== ファイルアップロード ===== */
+.custom-file-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.custom-file-label {
+    width: 130px;
+    height: 40px;
+    background-color: #eee;
+    padding: 6px 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.custom-file-label:hover {
+    background-color: #e0dfde;
+    border: 1px solid #e80f70;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #888;
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+}
+
+/* ===== 右エリア（フォーム） ===== */
+.product-edit-right {
+    width: 396px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4B4B4B;
+}
+
+input[id="name"],
+input[id="price"] {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+/* ===== 季節チェックボックス（カスタム） ===== */
+.checkbox-group {
+    display: flex;
+    gap: 30px;
+    margin-top: 8px;
+}
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #4B4B4B;
+    border-radius: 50%;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #4B4B4B;
+}
+
+.custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked~.checkmark::after {
+    display: block;
+}
+
+.custom-checkbox .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* ===== 商品説明 ===== */
+.form-group-description {
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+}
+
+.textarea-field {
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.textarea-field:focus {
+    outline: none;
+    border: 1px solid #999;
+}
+
+/* ===== エラーメッセージ ===== */
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.error-border {
+    border: 1px solid red;
+    background-color: #fff5f5;
+}
+
+/* ===== ボタン ===== */
+.button-container {
+    max-width: 800px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-buttons {
+    margin-left: 120px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-back,
+.btn-save {
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-emphasis: none;
+    text-decoration: none !important;
+}
+
+.btn-back {
+    background-color: #E0E0E0;
+    color: #333;
+}
+
+.btn-save {
+    background-color: #F5C800;
+    color: #333;
+}
+
+.btn-back:hover,
+.btn-save:hover {
+    opacity: 0.9;
+}
+
+/* ===== ゴミアイコン（削除） ===== */
+.btn-trash {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.trash-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.trash-icon:hover {
+    opacity: 1;
+}

@@ -1,0 +1,216 @@
+.register-container {
+    width: 1512px;
+    margin: 0 auto;
+    height: 930px;
+    padding-right: 376px;
+    padding-bottom: 70px;
+    padding-left: 376px;
+    gap: 40px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group_image {
+    width: 118px;
+    height: 43px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    gap: 10px;
+}
+
+input[type="file"] {
+    border: none;
+    outline: none;
+    padding: 0;
+    all: unset;
+    font-size: 14px;
+    cursor: pointer;
+    width: 130px;
+    height: 43px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    gap: 10px;
+}
+
+.file-input-wrapper {
+    margin-top: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+.required {
+    background-color: #e60033;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+.note {
+    font-size: 12px;
+    color: #c33;
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #8e8b8b;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 730px;
+    height: 43px;
+
+}
+textarea {
+    padding: 10px;
+    border: 1px solid #8e8b8b;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 730px;
+    height: 120px;
+    resize: vertical;
+}
+
+/* ===== チェックボックス ===== */
+.checkbox-group {
+    display: flex;
+    gap: 30px;
+    margin-top: 8px;
+}
+
+.custom-checkbox {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #4B4B4B;
+    border-radius: 50%;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #4B4B4B;
+}
+
+.custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked~.checkmark::after {
+    display: block;
+}
+
+.custom-checkbox .checkmark::after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* ===== ボタン ===== */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.btn-back {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    /* ← 枠線なし */
+    outline: none;
+    /* ← フォーカス時の枠線もなし */
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f5c800;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.btn-back:hover {
+    opacity: 0.9;
+}
+
+.btn-back {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-submit {
+    background-color: #f5c800;
+    color: #333;
+}
+
+.btn-back:hover,
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+}
