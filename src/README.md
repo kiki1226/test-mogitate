@@ -52,7 +52,8 @@ docker compose exec app php artisan route:clear
 # DBのリセット（開発中に使う）
 docker compose exec app php artisan migrate:fresh --seed
 
+---
+### 開発者情報
 
-##開発者情報
-名前：赤間 芙美子
-用途：学習・ポートフォリオ用
+- 名前：赤間 芙美子  
+- 用途：学習・ポートフォリオ用プロジェクト
