@@ -93,7 +93,7 @@
 
         
         <div class="pagination">
-            <?php echo e($products->onEachSide(1)->links('vendor.pagination.custom')); ?>
+            <?php echo e($products->appends(request()->query())->onEachSide(1)->links('vendor.pagination.custom')); ?>
 
         </div>
     </div>

@@ -93,7 +93,7 @@
 
         {{-- ページネーション --}}
         <div class="pagination">
-            {{ $products->onEachSide(1)->links('vendor.pagination.custom') }}
+            {{ $products->appends(request()->query())->onEachSide(1)->links('vendor.pagination.custom') }}
         </div>
     </div>
 </div>
